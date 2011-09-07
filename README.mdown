@@ -1,15 +1,17 @@
 # DX Image Box
 
-**DX Image Box** is a Croogo plugin for lightbox. Based on the Fancybox script it provides a simple integration with your Croogo install.
+**DX Image Box** is a [Croogo](http://croogo.org/) plugin for lightbox. Based on the [Fancybox script](http://fancybox.net/) it provides a simple integration with your Croogo install.
 
-# Installation
+For further instructions beyond this documentation, please refer to either Croogo help kit or Fancybox instructions.
+
+## Installation
 
   * Download the zip file with the plugin from the repo here
   * Extract it in your app/plugins directory (next to the example, tinymce and other plugins)
   * Go to your admin dashboard -> plugins section
   * Activate DX Image Box
   
-# Integration for developers
+## Integration for developers
 
   * Add the plugin (4 steps above)
   * Go to your app_controller.php (or another single controller which will handle your lightbox behavior)
@@ -17,7 +19,7 @@
   * Go to your default.ctp layout (or any single view that needs to define rules for lightbox)
   * Add the snippet for dximagebox initialization (more on this on the next step)
   
-## Options for snippet adding in layout/view
+### Options for snippet adding in layout/view
 
 You could add a default call to your layout:
 
@@ -33,7 +35,7 @@ Keep in mind that this will catch also links not pointing to an image (they have
 
     <?php echo $dximagebox->lightMe('.node-body a:has(img)'); ?>
   
-# Documentation for users
+## Documentation for users
 
 As pointed above, this script adds a lightbox functionality to images. So what a client has to do is:
   
